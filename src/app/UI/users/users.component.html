@@ -1,0 +1,14 @@
+<div>
+    <div class="users">
+        <app-contentheader [PageName]='pageName'>
+            <p>Total Users : {{totalUsers}}</p>
+        </app-contentheader>
+    </div>
+
+    <div id="user-card" *ngIf="isCardVisible">
+        <app-user-card *ngFor="let user of users" [Name]="user.name" 
+            [UserName]="user.username" [Email]="user.email">
+        </app-user-card>
+    </div>
+    <app-user-table *ngIf="!isCardVisible" [Users]="users"></app-user-table>
+</div>

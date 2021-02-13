@@ -1,0 +1,19 @@
+<div class="home">
+    <app-contentheader [PageName]="pageName">
+        <p>Home Page Description</p>
+    </app-contentheader>
+</div>
+<div class="home-card">
+    <app-home-card *ngFor="let card of cardsDetails" [Header]="card.id" [Description]="card.title">
+    </app-home-card>
+</div>
+<div class="home-post">
+    <mat-card>
+        <mat-card-title><i class="fa fa-fw fa-plus"></i>
+            Recent Blogs</mat-card-title>
+        <div class="home-post-content">
+            <app-home-post *ngFor="let post of postDetails" [Header]="post.title" [Description]="post.body">
+            </app-home-post>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,28 @@
+$greyColor: lightgray;
+$blackColor : black;
+
+header{
+    padding: 2px;
+    padding-left: 10px;
+    height: 10vh;
+    border-bottom: 1px solid $greyColor;
+    color: $greyColor;
+    h3 {
+        color: $blackColor;
+        span{
+            color: $greyColor;
+        }
+    }
+}
+
+#userinfo-area {
+    margin-right: 70px;
+    margin-top: 15px;
+    img {
+        margin-left: 20px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+}
+

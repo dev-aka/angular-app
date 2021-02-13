@@ -1,0 +1,12 @@
+<div id="content-header">
+    <mat-card>
+        <mat-card-title><i [className]="PageName == 'Home' ? 'fa fa-fw fa-home' : 'fa fa-fw fa-user'"></i>
+            {{PageName}}
+            <span *ngIf="PageName == 'Users'"><i (click)="onClick('list')" class="fa fa-fw fa-list"></i>
+                <i (click)="onClick('table')" class="fa fa-fw fa-table"></i></span>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <ng-content></ng-content>
+        </mat-card-subtitle>
+    </mat-card>
+</div>

@@ -1,0 +1,20 @@
+<div id="user-table">
+    <table datatable class="row-border hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>UserName</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of Users">
+                <td><img src="../../../../assets//user.jpg"></td>
+                <td class="td-name"><strong>{{user.name}}</strong></td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

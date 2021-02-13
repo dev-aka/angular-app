@@ -1,0 +1,31 @@
+.home p{
+    font-size: .8em;
+}
+
+.home-post{
+    height: 25vh;
+    margin-top: -40px;
+}
+
+.home-card{
+    height: 30vh;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.home-post mat-card-title {
+    font-size: 15px;
+}
+
+  .home-post-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  mat-card-title{
+    border-bottom: 1px solid lightgrey;
+    color : #47a1f6
+  }
